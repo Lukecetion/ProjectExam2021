@@ -7,15 +7,48 @@
 }
 
 body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-family: 'Open Sans', sans-serif;
     background-color: #020b0f;
 }
 
 header {
-    height: 750px;
-    width: auto;
-    max-width: 75%;
-    padding: 50px;
-    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #061e29;
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: 90%;
+        margin: 25px 0 25px 0;
+    }
+
+
+    img {
+        opacity: 10%;
+    }
+
+    h1 {
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 48px;
+    }
+
+    p {
+        width: 90%;
+        opacity: 50%;
+    }
 }
