@@ -13,6 +13,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -25,6 +29,7 @@ body {
 }
 
 header {
+  width: 30%;
   border-radius: 5px;
   overflow: hidden;
   display: -webkit-box;
@@ -58,6 +63,11 @@ header .textbox {
 }
 
 header img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   opacity: 10%;
 }
 
@@ -71,4 +81,25 @@ header h1 {
 header p {
   width: 90%;
   opacity: 50%;
+}
+
+.articleBox {
+  width: 30%;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #061e29;
+  margin: 50px 0 0 0;
+}
+
+.articleBox .articleTitle {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-transform: uppercase;
+  color: #4391b6;
+  margin: 25px;
+  border-radius: 5px;
+  padding: 25px;
+  background: #0b3041;
 }
