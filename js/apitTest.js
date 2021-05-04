@@ -24,7 +24,7 @@ const postUrl = '';
 async function getPosts() {
   try {
     const repsonse = await fetch(
-      'http://lukecetion.tech/wp-json/wp/v2/posts?_embed'
+      'https://lukecetion.tech/wp-json/wp/v2/posts?_embed'
     );
     const jsonAPI = await repsonse.json();
     console.log(jsonAPI);
